@@ -34,7 +34,7 @@ function App(){
 
   useEffect(()=>{
     if(search!==""){
-      fetch(`http://api.tvmaze.com/search/shows?q=${search}`)
+      fetch(`https://api.tvmaze.com/search/shows?q=${search}`)
       .then((res)=>res.json())
       .then((data)=>setSearchData(data))
     }
